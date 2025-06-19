@@ -14,7 +14,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable}  antialiased`}>{children}</body>
+      <body className={`   ${poppins.variable}  antialiased `}>
+        <div className="bg-gradient-to-t from-zinc-800 to-zinc-950 ">
+          {children}
+        </div>
+      </body>
     </html>
   );
 }

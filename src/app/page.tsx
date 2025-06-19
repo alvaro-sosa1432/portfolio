@@ -8,29 +8,36 @@ import {
 
 import { Introduction } from "@/components/Introdution";
 import { Tecnologias } from "@/components/Tecnologias";
+import React from "react";
+
+interface CarouselInter {
+  id: number;
+  content: React.ReactNode;
+}
+
 export default function Home() {
+  const carouselItems: CarouselInter[] = [
+    {
+      id: 1,
+      content: <Introduction />,
+    },
+    {
+      id: 2,
+      content: <Tecnologias />,
+    },
+  ];
+
   return (
-    <div className="sm:w-xl mx-auto  ">
+    <div className="sm:w-xl mx-auto   ">
       <Carousel>
-        <CarouselContent className=" ">
-          <CarouselItem className="p-4">
-            <div className="flex aspect-square items-center justify-center sm:border sm:border-cyan-500 dark:border-zinc-800 rounded-md h-full">
-              <Introduction />
-            </div>
-          </CarouselItem>
-          <CarouselItem className="p-4">
-            <div className="flex  items-center justify-center sm:border border-cyan-500 dark:border-zinc-800 rounded-md ">
-              <Tecnologias />
-            </div>
-          </CarouselItem>
-          <CarouselItem className="p-4">
-            <div className="flex aspect-square items-center justify-center border border-zinc-200 dark:border-zinc-800"></div>
-          </CarouselItem>
-          <CarouselItem className="p-4">
-            <div className="flex aspect-square items-center justify-center border border-zinc-200 dark:border-zinc-800">
-              4
-            </div>
-          </CarouselItem>
+        <CarouselContent>
+          {carouselItems.map((item: CarouselInter) => (
+            <CarouselItem key={item.id} className="min-[700px]:p-4">
+              <div className="min-[700px]:bg-zinc-950 flex  min-h-screen  min-[700px]:aspect-square items-center justify-center min-[700px]:border border-cyan-500  min-[700px]:rounded-md min-[500px]:h-full w-full">
+                {item.content}
+              </div>
+            </CarouselItem>
+          ))}
         </CarouselContent>
         <CarouselNavigation className="hidden min-[700px]:flex" alwaysShow />
         <CarouselIndicator />

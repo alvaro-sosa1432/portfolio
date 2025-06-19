@@ -137,7 +137,7 @@ function CarouselNavigation({
         type="button"
         aria-label="Previous slide"
         className={cn(
-          "pointer-events-auto h-fit w-fit rounded-full bg-white p-2 transition-opacity duration-300 dark:bg-gray-950 border-2 border-cyan-500 text",
+          "pointer-events-auto h-fit w-fit rounded-full  p-2 transition-opacity duration-300 bg-zinc-950 border-2 border-cyan-500 text",
           alwaysShow
             ? "opacity-100"
             : "opacity-0 group-hover/hover:opacity-100",
@@ -158,7 +158,7 @@ function CarouselNavigation({
       <button
         type="button"
         className={cn(
-          "pointer-events-auto h-fit w-fit rounded-full bg-white border-2 border-cyan-500 p-2 transition-opacity duration-300 dark:bg-zinc-950",
+          "pointer-events-auto h-fit w-fit rounded-full  border-2 border-cyan-500 p-2 transition-opacity duration-300 bg-zinc-950",
           alwaysShow
             ? "opacity-100"
             : "opacity-0 group-hover/hover:opacity-100",
