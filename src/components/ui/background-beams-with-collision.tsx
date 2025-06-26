@@ -10,8 +10,8 @@ export const BackgroundBeamsWithCollision = ({
   children: React.ReactNode;
   className?: string;
 }) => {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const parentRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null!);
+  const parentRef = useRef<HTMLDivElement>(null!);
 
   const beams = [
     {
@@ -176,8 +176,8 @@ const CollisionMechanism = React.forwardRef<
   return (
     <>
       <motion.div
+        ref={ref} // Usa la ref pasada aquí
         key={beamKey}
-        ref={beamRef}
         animate="animate"
         initial={{
           translateY: beamOptions.initialY || "-200px",
