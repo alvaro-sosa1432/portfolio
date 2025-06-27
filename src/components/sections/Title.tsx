@@ -17,7 +17,7 @@ export const Title = () => {
   ];
 
   return (
-    <div className="text-4xl">
+    <div className="">
       <TypewriterEffectSmooth words={words} />
     </div>
   );
