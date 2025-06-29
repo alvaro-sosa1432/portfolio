@@ -3,7 +3,7 @@ import { PropsWithChildren } from "react";
 
 export const InViewContainer = ({ children }: PropsWithChildren) => {
   return (
-    <div className="">
+    <div className="flex flex-col flex-wrap bg-zinc-950 text-white overflow-y-auto h-[500] font-[poppins] ">
       <InView
         variants={{
           hidden: {

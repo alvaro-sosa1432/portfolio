@@ -5,10 +5,10 @@ import { Magnetic } from "../ui/magnetic";
 
 export const Hero = () => {
   return (
-    <div className="flex flex-col min-[600px]:p-4  items-center justify-center gap-6 min-h-screen ">
+    <div className=" min-h-screen  flex flex-col min-[600px]:p-4  items-center justify-center gap-6  ">
       <Title />
       <Magnetic intensity={0.2} actionArea="global" range={200}>
-        <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 my-6 ">
+        <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 my-6   ">
           <BorderTrail className="bg-purple-500" />
           <Image
             alt="alvaro sosa "

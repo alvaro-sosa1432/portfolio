@@ -3,7 +3,7 @@ import { Magnetic } from "../ui/magnetic";
 
 export const AboutMe = () => {
   return (
-    <div className=" h-screen sm:min-w-2xl">
+    <div className=" h-screen sm:min-w-2xl flex justify-center items-center">
       <Magnetic intensity={0.2} actionArea="global" range={200}>
         <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 my-6 mx-6 sm:w-xl ">
           <BorderTrail className="bg-purple-500" />
