@@ -126,7 +126,7 @@ export const TypewriterEffectSmooth = ({
               {word.text.map((char, index) => (
                 <span
                   key={`char-${index}`}
-                  className={cn(`text-white   `, word.className)}
+                  className={cn(`text-white    `, word.className)}
                 >
                   {char}
                 </span>
@@ -156,7 +156,7 @@ export const TypewriterEffectSmooth = ({
         }}
       >
         <div
-          className="text-[1.2rem]  md:text-xl lg:text-3xl xl:text-6xl font-bold"
+          className="text-[1.2rem] px-2 md:text-xl text-wrap lg:text-3xl xl:text-6xl font-bold"
           style={{
             whiteSpace: "nowrap",
           }}

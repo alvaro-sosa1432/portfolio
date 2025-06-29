@@ -12,12 +12,15 @@ export const Title = () => {
       text: "Alvaro",
     },
     {
-      text: "Sosa",
+      text: "Desarrollador",
+    },
+    {
+      text: "FullStack",
     },
   ];
 
   return (
-    <div className="">
+    <div>
       <TypewriterEffectSmooth words={words} />
     </div>
   );

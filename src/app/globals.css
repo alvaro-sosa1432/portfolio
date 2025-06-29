@@ -120,3 +120,16 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Elimina espacio blanco */
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* Limita el crecimiento del contenedor principal */
+main {
+  min-height: 100vh;
+  position: relative;
+}

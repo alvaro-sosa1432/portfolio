@@ -9,16 +9,16 @@ import { AboutMe } from "@/components/sections/AboutMe";
 export default function Home() {
   return (
     <ClientOnly>
-      <BackgroundBeamsWithCollision className=" flex flex-col  font-[poppins] bg-zinc-950 min-h-screen text-white ">
-        <div>
+      <div className="relative">
+        <BackgroundBeamsWithCollision className=" min-h-screen flex flex-col  font-[poppins] bg-zinc-950  text-white ">
           <InViewContainer>
             <Hero />
           </InViewContainer>
           <InViewContainer>
             <AboutMe />
           </InViewContainer>
-        </div>
-      </BackgroundBeamsWithCollision>
+        </BackgroundBeamsWithCollision>
+      </div>
     </ClientOnly>
   );
 }
