@@ -13,5 +13,5 @@ export function ClientOnly({ children }: { children: React.ReactNode }) {
     return null;
   }
 
-  return <div className="flex flex-col bg-zinc-950">{children}</div>;
+  return <div className="flex flex-col bg-zinc-950 text-white">{children}</div>;
 }

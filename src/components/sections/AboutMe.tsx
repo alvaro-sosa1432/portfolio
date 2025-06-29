@@ -1,24 +1,17 @@
-import { BorderTrail } from "../ui/border-trail";
-import { Magnetic } from "../ui/magnetic";
+import { SocialComponent } from "./components/SocialComponet";
+import { AboutMeComponet } from "./components/AboutMeComponent";
+import { HoverEffect } from "../ui/card-hover-effect";
+import { renderToString } from "react-dom/server";
 
 export const AboutMe = () => {
   return (
-    <div className=" h-screen sm:min-w-2xl flex justify-center items-center">
-      <Magnetic intensity={0.2} actionArea="global" range={200}>
-        <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 my-6 mx-6 sm:w-xl ">
-          <BorderTrail className="bg-purple-500" />
-          <p>
-            <span className="text-purple-500 font-bold">
-              Desarrollador FullStack Junior{" "}
-            </span>
-            con una pasión inquebrantable por convertir ideas en soluciones
-            digitales. Mi viaje en el desarrollo web comenzó breve mención
-            auténtica: ej. construyendo mi primer CRUD en Node.js o autodidacta
-            con cursos en Platzi/Udemy, y desde entonces no he dejado de
-            aprender.
-          </p>
-        </div>
-      </Magnetic>
+    <div className="  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 justify-center md:grid-rows-4">
+      <div className="col-span-2 row-span-2 ">
+        <AboutMeComponet />
+      </div>
+      <div className=" col-span-2">
+        <SocialComponent />
+      </div>
     </div>
   );
 };
