@@ -16,7 +16,6 @@ export const Title = () => {
   return (
     <div>
       <TypewriterEffectSmooth words={words} />
-      <h2 className="font-[bitcountGridDouble]">Desarrolador fullstack</h2>
     </div>
   );
 };

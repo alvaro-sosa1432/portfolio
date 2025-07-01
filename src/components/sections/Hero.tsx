@@ -7,6 +7,11 @@ export const Hero = () => {
   return (
     <div className=" min-h-screen flex flex-col min-[600px]:p-4  items-center justify-center gap-6  ">
       <Title />
+      <div className="flex justify-center">
+        <h2 className="font-[bitcountGridDouble]  text-purple-500 text-3xl ">
+          Desarrolador fullstack
+        </h2>
+      </div>
       <Magnetic intensity={0.2} actionArea="global" range={200}>
         <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 my-6   ">
           <BorderTrail className="bg-purple-500" />

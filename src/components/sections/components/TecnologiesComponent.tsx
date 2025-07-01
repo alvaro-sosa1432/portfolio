@@ -16,7 +16,9 @@ export const Tecnologies = () => {
     <Magnetic intensity={0.2} actionArea="global" range={200}>
       <div className=" text-purple-500 text-3xl bg-white/10 backdrop-blur-lg rounded-xl p-4  ">
         <BorderTrail className="bg-purple-500" />
-        <h1 className="text-purple-500 font-bold text-center ">Tecnologias</h1>
+        <h1 className="text-purple-500 font-bold text-center font-[bitcountGridDouble] ">
+          Tecnologias
+        </h1>
         <div className="flex justify-center flex-wrap items-center gap-4 py-4">
           <FaHtml5 />
           <FaCss3 />

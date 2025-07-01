@@ -8,7 +8,7 @@ export const AboutMe = () => {
       <h1 className="font-bold text-6xl text-purple-500 text-center ">
         Sobre Mi
       </h1>
-      <div className="  grid grid-cols-1    min-[600px]:grid-cols-4 justify-center items-center  grid-flow-row-dense gap-2 my-6  ">
+      <div className=" font-[poppins]  grid grid-cols-1    min-[600px]:grid-cols-4 justify-center items-center  grid-flow-row-dense gap-2 my-6  ">
         <div className="col-span-4  ">
           <AboutMeComponet />
         </div>
