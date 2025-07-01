@@ -8,7 +8,7 @@ import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-w
 export default function Home() {
   return (
     <ClientOnly>
-      <BackgroundBeamsWithCollision className="bg-inherit flex flex-col min-h-screen items-center justify-center">
+      <BackgroundBeamsWithCollision className="bg-inherit flex flex-col min-h-screen items-center justify-center scroll-smooth">
         <div className="sm:w-2xl">
           <Hero />
           <AboutMe />

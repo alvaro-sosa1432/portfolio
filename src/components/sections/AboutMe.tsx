@@ -1,10 +1,17 @@
+import { CiCircleChevUp } from "react-icons/ci";
 import { SocialComponent } from "./components/SocialComponet";
 import { AboutMeComponet } from "./components/AboutMeComponent";
 import { Tecnologies } from "./components/TecnologiesComponent";
 
 export const AboutMe = () => {
   return (
-    <div>
+    <div
+      id="aboutMe"
+      className="flex flex-col items-center justify-center min-h-screen "
+    >
+      <a href="#hero" className="my-10">
+        <CiCircleChevUp className="text-5xl text-purple-500 " />
+      </a>
       <h1 className="font-bold text-6xl text-purple-500 text-center ">
         Sobre Mi
       </h1>

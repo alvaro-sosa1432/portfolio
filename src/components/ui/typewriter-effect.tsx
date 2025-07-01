@@ -119,10 +119,10 @@ export const TypewriterEffectSmooth = ({
   });
   const renderWords = () => {
     return (
-      <div>
+      <div className="flex flex-wrap justify-center min-[600px]:inline-block ">
         {wordsArray.map((word, idx) => {
           return (
-            <div key={`word-${idx}`} className="inline-block">
+            <div key={`word-${idx}`} className="inline-block   ">
               {word.text.map((char, index) => (
                 <span
                   key={`char-${index}`}
@@ -156,7 +156,7 @@ export const TypewriterEffectSmooth = ({
         }}
       >
         <div
-          className=" text-2xl px-2  lg:text-3xl xl:text-6xl font-bold"
+          className="  text-3xl xl:text-6xl font-bold"
           style={{
             whiteSpace: "nowrap",
           }}
