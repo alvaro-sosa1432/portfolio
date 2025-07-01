@@ -7,7 +7,7 @@ export const Hero = () => {
   return (
     <div className=" min-h-screen flex flex-col min-[600px]:p-4  items-center justify-center gap-6  ">
       <Title />
-      <div className="flex justify-center">
+      <div className="flex text-center ">
         <h2 className="font-[bitcountGridDouble]  text-purple-500 text-3xl ">
           Desarrolador fullstack
         </h2>
