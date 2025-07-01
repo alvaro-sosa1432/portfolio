@@ -36,7 +36,7 @@ export const SocialComponent = () => {
           download="/AlvaroSosa-CV(ES).pdf"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
-          className="bg-purple-500 text-white rounded-lg px-4 py-2 text-[20px] font-semibold w-40 flex gap-5 justify-center items-center "
+          className="bg-purple-500 text-white rounded-lg px-4 py-2 text-[20px] font-semibold w-40 flex gap-5 justify-center items-center font-[bitcountGridDouble]  "
         >
           Mi CV
           <CiSaveDown2 />
