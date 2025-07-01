@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+import localFont from "next/font/local";
+
+const bitcountGridDouble = localFont({
+  src: "./font/BitcountGridDouble-Regular.ttf",
+  weight: "400",
+  style: "normal",
+});
 import "./globals.css";
 
 const poppins = Poppins({
@@ -21,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable}  antialiased  max-w-[100vw] overflow-x-hidden  `}
+        className={`${poppins.variable} ${bitcountGridDouble.className}  antialiased  max-w-[100vw] overflow-x-hidden  `}
       >
         {children}
       </body>
