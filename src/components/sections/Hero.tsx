@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { CiCircleChevDown } from "react-icons/ci";
 import { Title } from "./Title";
 
 import { BorderTrail } from "../ui/border-trail";
@@ -9,11 +8,11 @@ export const Hero = () => {
   return (
     <div
       id="hero"
-      className=" min-h-screen flex flex-col min-[600px]:p-4  items-center justify-center gap-6 mt-16 "
+      className=" min-h-screen flex flex-col min-[600px]:p-4  items-center justify-center gap-6 mt-6 "
     >
       <Title />
       <div className="flex text-center  ">
-        <h2 className="font-[bitcountGridDouble]  text-purple-500 text-3xl ">
+        <h2 className="font-[bitcountGridDouble]  text-purple-500 min-[600px]:text-3xl ">
           Desarrolador fullstack
         </h2>
       </div>
@@ -30,9 +29,6 @@ export const Hero = () => {
           />
         </div>
       </Magnetic>
-      <a href="#aboutMe">
-        <CiCircleChevDown className="text-5xl text-purple-500" />
-      </a>
     </div>
   );
 };

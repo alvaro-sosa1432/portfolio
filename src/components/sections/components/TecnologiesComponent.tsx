@@ -14,7 +14,7 @@ import { DiMysql } from "react-icons/di";
 export const Tecnologies = () => {
   return (
     <Magnetic intensity={0.2} actionArea="global" range={200}>
-      <div className=" text-purple-500 text-3xl bg-white/10 backdrop-blur-lg rounded-xl p-4  ">
+      <div className=" text-purple-500 min-[400px]:text-3xl bg-white/10 backdrop-blur-lg rounded-xl p-4  ">
         <BorderTrail className="bg-purple-500" />
         <h1 className="text-purple-500 font-bold text-center font-[bitcountGridDouble] ">
           Tecnologias
