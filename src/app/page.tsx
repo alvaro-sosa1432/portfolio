@@ -4,6 +4,7 @@ import { ClientOnly } from "@/components/sections/ClientOnly";
 import { Hero } from "@/components/sections/Hero";
 import { AboutMe } from "@/components/sections/AboutMe";
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
+import { Projects } from "@/components/sections/Projects";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <div className="sm:w-2xl">
           <Hero />
           <AboutMe />
+          <Projects />
         </div>
       </BackgroundBeamsWithCollision>
     </ClientOnly>

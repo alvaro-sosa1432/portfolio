@@ -19,7 +19,7 @@ export const Tecnologies = () => {
         <h1 className=" text-3xl py-3 text-purple-500 font-bold text-center font-[bitcountGridDouble] ">
           Tecnologias
         </h1>
-        <div className="flex justify-center flex-wrap items-center gap-4 py-4 text-2xl ">
+        <div className="flex justify-center flex-wrap items-center gap-4 py-4 text-2xl min-[600px]:text-4xl ">
           <FaHtml5 />
           <FaCss3 />
           <RiJavascriptFill />
