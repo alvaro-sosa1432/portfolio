@@ -6,7 +6,7 @@ export const AboutMeComponet = () => {
       <section className="bg-white/10 backdrop-blur-lg rounded-xl p-6 m-2   ">
         <BorderTrail className="bg-purple-500" />
 
-        <p>
+        <p className="text-xs min-[600px]:text-[1rem]">
           Tengo una pasión inquebrantable por convertir ideas en soluciones
           digitales. Mi viaje en el desarrollo web comenzó breve mención
           auténtica: ej. construyendo mi primer CRUD en Node.js o autodidacta
