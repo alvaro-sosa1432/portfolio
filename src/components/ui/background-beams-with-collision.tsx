@@ -127,15 +127,6 @@ const CollisionMechanism = React.forwardRef<
   });
   const [beamKey, setBeamKey] = useState(0);
   const [cycleCollisionDetected, setCycleCollisionDetected] = useState(false);
-  const [windowHeight, setWindowHeight] = useState(0);
-
-  useEffect(() => {
-    // Actualizar altura al cargar y al cambiar tamaño
-    const updateHeight = () => setWindowHeight(window.innerHeight);
-    updateHeight();
-    window.addEventListener("resize", updateHeight);
-    return () => window.removeEventListener("resize", updateHeight);
-  }, []);
 
   useEffect(() => {
     const checkCollision = () => {
