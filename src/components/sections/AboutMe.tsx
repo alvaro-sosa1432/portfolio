@@ -8,7 +8,7 @@ export const AboutMe = () => {
   return (
     <motion.div
       id="me"
-      className="flex flex-col items-center justify-center min-h-screen"
+      className="flex flex-col items-center justify-center h-screen"
       initial="hidden"
       whileInView="visible"
       viewport={{ margin: "-80px 0px -80px 0px" }}

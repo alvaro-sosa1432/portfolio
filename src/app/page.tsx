@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <ClientOnly>
       <BackgroundBeamsWithCollision className="bg-inherit flex flex-col min-h-screen items-center justify-center scroll-smooth">
-        <Navbar />
         <div className="sm:w-2xl">
+          <Navbar />
           <Hero />
           <AboutMe />
           <Projects />

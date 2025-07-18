@@ -26,9 +26,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html className="h-full" lang="en">
       <body
-        className={`${poppins.variable} ${bitcountGridDouble.className}  antialiased  max-w-[100vw] overflow-x-hidden  `}
+        className={`${poppins.variable} ${bitcountGridDouble.className}  antialiased  max-w-[100vw] overflow-x-hidden  h-full overflow-y-auto `}
       >
         {children}
       </body>
