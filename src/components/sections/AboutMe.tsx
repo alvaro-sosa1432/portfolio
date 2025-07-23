@@ -1,6 +1,6 @@
 import { SocialComponent } from "./components/SocialComponet";
 import { AboutMeComponet } from "./components/AboutMeComponent";
-import { Tecnologies } from "./components/TecnologiesComponent";
+import { Technologies } from "./components/TecnologiesComponent";
 import { itemVariants, containerVariants } from "./variants/animationVariants";
 import { motion } from "motion/react";
 
@@ -8,14 +8,14 @@ export const AboutMe = () => {
   return (
     <motion.div
       id="me"
-      className="flex flex-col items-center justify-center h-screen"
+      className="flex flex-col items-center justify-center  sm:h-screen my-10"
       initial="hidden"
       whileInView="visible"
       viewport={{ margin: "-80px 0px -80px 0px" }}
       variants={containerVariants}
     >
       <motion.h1
-        className="font-bold text-4xl min-[600px]:text-6xl text-purple-500 text-center"
+        className="font-bold text-2xl min-[600px]:text-6xl text-purple-500 text-center mt-15"
         variants={itemVariants}
       >
         Sobre Mi
@@ -37,7 +37,7 @@ export const AboutMe = () => {
         </motion.div>
 
         <motion.div className="col-span-2" variants={itemVariants}>
-          <Tecnologies />
+          <Technologies />
         </motion.div>
       </motion.div>
     </motion.div>

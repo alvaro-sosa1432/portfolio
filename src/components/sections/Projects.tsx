@@ -34,7 +34,7 @@ export const Projects = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{ margin: "-80px 0px -80px 0px" }}
-      className="flex flex-col items-center justify-center h-screen mb-10 "
+      className="flex flex-col items-center justify-center h-screen mb-15 "
     >
       <motion.h1
         className=" text-3xl min-[600px]:text-6xl text-purple-500 my-5 "
@@ -49,7 +49,7 @@ export const Projects = () => {
         {ProjectData.map((project) => (
           <motion.div
             variants={itemVariants}
-            className=" col-span-2 my-5 "
+            className=" col-span-2  "
             key={project.id}
           >
             <ProjectComponent

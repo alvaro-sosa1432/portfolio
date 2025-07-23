@@ -8,10 +8,10 @@ export const Hero = () => {
   return (
     <div
       id="hero"
-      className="  h-screen flex flex-col min-[600px]:p-4  items-center justify-center gap-6 mt-10  "
+      className="  h-screen flex flex-col min-[600px]:p-4  items-center justify-center gap-6  "
     >
       <Title />
-      <div className="flex text-center  ">
+      <div className=" text-center  ">
         <h2 className="font-[bitcountGridDouble]  text-purple-500 min-[600px]:text-3xl ">
           Desarrolador fullstack
         </h2>
@@ -20,7 +20,7 @@ export const Hero = () => {
         <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 my-6   ">
           <BorderTrail className="bg-purple-500" />
           <Image
-            className="w-30 md:w-[250px]"
+            className="w-40  min-[300]:w-60 md:w-[300px]"
             alt="alvaro sosa "
             src="/character.png"
             priority

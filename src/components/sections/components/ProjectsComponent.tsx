@@ -11,7 +11,7 @@ export const ProjectComponent = ({
 }: IProjectData) => {
   return (
     <div className="  col-span-2   ">
-      <div className="bg-white/10 backdrop-blur-lg rounded-xl  m-2 h-90  ">
+      <div className="bg-white/10 backdrop-blur-lg rounded-xl  m-2   ">
         <BorderTrail className="bg-purple-500" />
 
         <Image
