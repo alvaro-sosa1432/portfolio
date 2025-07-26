@@ -9,8 +9,6 @@ export function Navbar() {
     { name: "Proyectos", path: "#projects" },
   ];
 
-  const pathname = usePathname();
-
   return (
     <motion.nav
       initial={{ y: 100, opacity: 0 }}
