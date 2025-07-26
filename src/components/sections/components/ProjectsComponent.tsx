@@ -22,12 +22,12 @@ export const ProjectComponent = ({
           height={200}
         />
         <div className="text-center text-purple-500 my-6 h-40 flex flex-col items-center justify-center  ">
-          <h3 className="text-2xl p-2">{title}</h3>
+          <h3 className="text-xl sm:text-2xl p-2">{title}</h3>
           <p className="text-white text-xs font-[poppins] text-center w-50 pb-6  ">
             {description}
           </p>
           <motion.a
-            className="bg-purple-500 text-white rounded-lg px-4 py-2   text-[20px] font-semibold w-40 cursor-pointer "
+            className="bg-purple-500 text-white rounded-lg px-4 py-2   text-[20px] font-semibold w-40 cursor-pointer h-10 "
             href={url}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
