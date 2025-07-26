@@ -1,6 +1,5 @@
 import { motion } from "motion/react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
 export function Navbar() {
   const navItems = [
