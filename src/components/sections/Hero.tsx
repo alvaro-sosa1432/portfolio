@@ -8,7 +8,7 @@ export const Hero = () => {
   return (
     <div
       id="hero"
-      className="  sm:h-screen flex flex-col min-[600px]:p-4  items-center justify-center gap-6 mt-10  "
+      className="   h-screen flex flex-col min-[600px]:p-4  items-center justify-center gap-6   "
     >
       <Title />
       <div className=" text-center  ">
