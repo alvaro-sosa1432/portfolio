@@ -13,7 +13,7 @@ export function Navbar() {
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className="fixed bottom-0 left-0 right-0 bg-white/10 backdrop-blur-lg border-t border-gray-700 z-50 w-full"
+      className="fixed bottom-0 left-0 right-0 bg-white/10 backdrop-blur-lg border-t border-purple-500 z-50 w-full"
     >
       <div className="flex justify-around items-center h-16 max-w-md mx-auto px-4">
         {navItems.map((item) => {

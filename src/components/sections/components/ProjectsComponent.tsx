@@ -15,13 +15,13 @@ export const ProjectComponent = ({
         <BorderTrail className="bg-purple-500" />
 
         <Image
-          className="rounded-t-xl w-auto mx-auto  h-40 "
+          className="rounded-t-xl w-auto mx-auto  h-40 md:h-60 "
           alt={title}
           src={image}
           width={200}
           height={200}
         />
-        <div className="text-center text-purple-500 my-6 h-40 flex flex-col items-center justify-center  ">
+        <div className="text-center text-purple-500 h-40 md:h-44 flex flex-col items-center justify-center  ">
           <h3 className="text-xl sm:text-2xl p-2">{title}</h3>
           <p className="text-white text-xs font-[poppins] text-center w-50 pb-6  ">
             {description}
