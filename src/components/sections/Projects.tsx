@@ -20,10 +20,10 @@ const ProjectData: IProjectData[] = [
   },
   {
     id: "2",
-    title: "Proyecto en proceso",
-    description: "Proyecto en proceso ",
-    image: "/inProgress.png",
-    url: "",
+    title: "My Eccommerce",
+    description: "Eccommerce creado utilizando fake store api",
+    image: "/my-eccommerce.png",
+    url: "https://eccomerce-my-eco.vercel.app/",
   },
 ];
 
