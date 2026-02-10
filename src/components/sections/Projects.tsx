@@ -23,7 +23,7 @@ const ProjectData: IProjectData[] = [
     title: "My Eccommerce",
     description: "Eccommerce creado utilizando fake store api",
     image: "/my-eccommerce.png",
-    url: "https://eccomerce-my-eco.vercel.app/",
+    url: "https://my-eccormmerce.vercel.app/",
   },
 ];
 
