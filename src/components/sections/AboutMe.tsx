@@ -1,45 +1,30 @@
 import { SocialComponent } from "./components/SocialComponet";
 import { AboutMeComponet } from "./components/AboutMeComponent";
 import { Technologies } from "./components/TecnologiesComponent";
-import { itemVariants, containerVariants } from "./variants/animationVariants";
-import { motion } from "motion/react";
 
 export const AboutMe = () => {
   return (
-    <motion.div
+    <section
       id="me"
-      className="flex flex-col items-center justify-center  sm:h-screen my-10"
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ margin: "-80px 0px -80px 0px" }}
-      variants={containerVariants}
+      aria-labelledby="about-heading"
+      className="scroll-mt-6 border-t border-white/10 px-5 py-12 sm:px-8 sm:py-16 lg:px-12 lg:py-20"
     >
-      <motion.h1
-        className="font-bold text-2xl min-[600px]:text-6xl text-purple-500 text-center mt-15"
-        variants={itemVariants}
-      >
-        Sobre Mi
-      </motion.h1>
-
-      <motion.div
-        className="font-[poppins] grid grid-cols-1 min-[600px]:grid-cols-4 justify-center items-center grid-flow-row-dense gap-2 my-6"
-        variants={containerVariants}
-      >
-        <motion.div className="col-span-4" variants={itemVariants}>
-          <AboutMeComponet />
-        </motion.div>
-
-        <motion.div
-          className="col-span-3 min-[600px]:col-span-2"
-          variants={itemVariants}
+      <div className="mx-auto max-w-6xl">
+        <h2
+          id="about-heading"
+          className="mb-5 text-4xl font-bold tracking-tight text-white sm:mb-7 sm:text-5xl"
         >
-          <SocialComponent />
-        </motion.div>
+          Sobre <span className="text-purple-400">mí</span>
+        </h2>
 
-        <motion.div className="col-span-2" variants={itemVariants}>
-          <Technologies />
-        </motion.div>
-      </motion.div>
-    </motion.div>
+        <div className="grid gap-4 lg:grid-cols-[minmax(0,1.3fr)_minmax(260px,0.7fr)] lg:gap-6">
+          <div className="space-y-6 rounded-3xl border border-purple-500/25 bg-purple-500/5 p-5 sm:p-8">
+            <AboutMeComponet />
+            <Technologies />
+          </div>
+          <SocialComponent />
+        </div>
+      </div>
+    </section>
   );
 };

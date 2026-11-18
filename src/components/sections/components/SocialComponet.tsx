@@ -1,52 +1,36 @@
-import { Magnetic } from "@/components/ui/magnetic";
-import { BorderTrail } from "@/components/ui/border-trail";
-import { motion } from "motion/react";
+import { Download, Mail } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
-import { CiSaveDown2 } from "react-icons/ci";
-import { MdEmail } from "react-icons/md";
+
+const contactLinks = [
+  { label: "Enviar correo", href: "mailto:alvarososafrancisco1432@gmail.com", Icon: Mail },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/alvaro-sosa1432/", Icon: FaLinkedin },
+  { label: "GitHub", href: "https://github.com/alvaro-sosa1432", Icon: FaGithub },
+  { label: "Descargar CV", href: "/AlvaroSosa-CV(ES).pdf", Icon: Download, download: true },
+];
 
 export const SocialComponent = () => {
   return (
-    <Magnetic intensity={0.2} actionArea="global" range={200}>
-      <div className=" flex justify-center items-center flex-wrap text-purple-500 text-3xl bg-white/10 backdrop-blur-lg rounded-xl p-6 m-2 gap-5 min-[600px]:h-60 ">
-        <motion.h1 className=" text-2xl sm:text-3xl font-[bitcountGridDouble]">
-          Contactame
-        </motion.h1>
-        <BorderTrail className="bg-purple-500" />
-        <div className="flex justify-center items-center flex-wrap  gap-5">
-          <motion.a
-            whileHover={{ scale: 1.3 }}
-            whileTap={{ scale: 0.95 }}
-            href="https://www.linkedin.com/in/alvaro-sosa1432/"
-          >
-            <FaLinkedin className="min-[600px]:text-5xl" />
-          </motion.a>
-          <motion.a
-            whileHover={{ scale: 1.3 }}
-            whileTap={{ scale: 0.95 }}
-            href="mailto:alvarososafrancisco1432@gmail.com"
-          >
-            <MdEmail className="min-[600px]:text-5xl" />
-          </motion.a>
-          <motion.a
-            whileHover={{ scale: 1.3 }}
-            whileTap={{ scale: 0.95 }}
-            href="https://github.com/alvaro-sosa1432"
-          >
-            <FaGithub className="min-[600px]:text-5xl" />
-          </motion.a>
-          <motion.a
-            href="/AlvaroSosa-CV(ES).pdf"
-            download="/AlvaroSosa-CV(ES).pdf"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-            className="bg-purple-500 text-white rounded-lg px-2 sm:px-4 py-2 text-[20px] font-semibold w-40 flex gap-5 justify-center items-center font-[bitcountGridDouble]  "
-          >
-            Mi CV
-            <CiSaveDown2 className=" text-2xl min-[600px]:text-5xl" />
-          </motion.a>
-        </div>
-      </div>
-    </Magnetic>
+    <div className="rounded-3xl border border-purple-500/25 bg-white/[0.04] p-5 sm:p-8">
+      <h3 id="about-contact" className="mb-4 text-2xl font-bold text-white">
+        Contacto
+      </h3>
+      <ul
+        aria-labelledby="about-contact"
+        className="grid gap-2 font-[family-name:var(--font-poppins)] sm:grid-cols-2 lg:grid-cols-1"
+      >
+        {contactLinks.map(({ label, href, Icon, download }) => (
+          <li key={href}>
+            <a
+              href={href}
+              download={download}
+              className="flex min-h-12 items-center gap-3 rounded-xl border border-purple-400/25 bg-purple-500/5 px-4 py-2 text-sm font-medium text-zinc-100 transition-colors hover:border-purple-400/60 hover:bg-purple-500/15 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-400"
+            >
+              <Icon className="size-5 shrink-0 text-purple-300" aria-hidden="true" />
+              {label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 };
