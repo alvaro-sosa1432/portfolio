@@ -1,66 +1,56 @@
-import { motion } from "motion/react";
 import { ProjectComponent } from "./components/ProjectsComponent";
-import { itemVariants, containerVariants } from "./variants/animationVariants";
 
 export interface IProjectData {
-  id?: string;
   title: string;
   description: string;
   image: string;
-  url: string;
+  imageAlt: string;
+  demoUrl: string;
+  codeUrl: string;
+  technologies: readonly string[];
 }
 
-const ProjectData: IProjectData[] = [
+const projects: IProjectData[] = [
   {
-    id: "1",
-    title: "Rick And Morty APP",
+    title: "Rick and Morty App",
+    description: "Explorador de personajes con búsqueda por nombre y fichas individuales.",
     image: "/rickandmorty.jpeg",
-    description: "App creada utilizando la API de rick y morty",
-    url: "https://rick-and-morty-app-two-tau.vercel.app/",
+    imageAlt: "Página de inicio con tarjetas de los personajes principales de Rick and Morty",
+    demoUrl: "https://rick-and-morty-app-two-tau.vercel.app/",
+    codeUrl: "https://github.com/alvaro-sosa1432/rick-and-morty-app",
+    technologies: ["React", "Vite", "Tailwind CSS", "TanStack Query", "Rick and Morty API"],
   },
   {
-    id: "2",
-    title: "My Eccommerce",
-    description: "Eccommerce creado utilizando fake store api",
+    title: "My Ecommerce",
+    description: "Tienda con catálogo y fichas de producto de la Fake Store API.",
     image: "/my-eccommerce.png",
-    url: "https://my-eccormmerce.vercel.app/",
+    imageAlt: "Página de inicio de la tienda con su catálogo de productos",
+    demoUrl: "https://my-eccormmerce.vercel.app/",
+    codeUrl: "https://github.com/alvaro-sosa1432/my-eccormmerce",
+    technologies: ["React", "Vite", "Tailwind CSS", "TanStack Query", "Fake Store API"],
   },
 ];
 
 export const Projects = () => {
   return (
-    <motion.div
+    <section
       id="projects"
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ margin: "-80px 0px -80px 0px" }}
-      className="flex flex-col items-center justify-center  sm:h-screen mb-20 md:mb-1 "
+      aria-labelledby="projects-heading"
+      className="scroll-mt-6 border-t border-white/10 px-5 pb-28 pt-12 sm:px-8 sm:pt-16 lg:px-12 lg:pt-20"
     >
-      <motion.h1
-        className=" text-3xl min-[600px]:text-6xl text-purple-500 my-5 "
-        variants={itemVariants}
-      >
-        Proyectos
-      </motion.h1>
-      <motion.div
-        variants={containerVariants}
-        className="grid grid-cols-1 min-[600px]:grid-cols-4   "
-      >
-        {ProjectData.map((project) => (
-          <motion.div
-            variants={itemVariants}
-            className=" col-span-2  "
-            key={project.id}
-          >
-            <ProjectComponent
-              title={project.title}
-              image={project.image}
-              url={project.url}
-              description={project.description}
-            />
-          </motion.div>
-        ))}
-      </motion.div>
-    </motion.div>
+      <div className="mx-auto max-w-6xl">
+        <h2
+          id="projects-heading"
+          className="mb-5 text-4xl font-bold tracking-tight text-purple-400 sm:mb-7 sm:text-5xl"
+        >
+          Proyectos
+        </h2>
+        <div className="grid gap-5 md:grid-cols-2 lg:gap-6">
+          {projects.map((project) => (
+            <ProjectComponent key={project.codeUrl} {...project} />
+          ))}
+        </div>
+      </div>
+    </section>
   );
 };

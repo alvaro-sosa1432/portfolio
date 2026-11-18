@@ -1,92 +1,49 @@
-# Frontend Developer Portfolio
+# Álvaro Sosa · Portfolio frontend
 
-A personal portfolio built with Next.js, React, TypeScript, and Tailwind CSS to showcase my frontend development projects and technical skills.
+Portfolio personal donde presento mis proyectos de desarrollo web, las tecnologías que uso y mis canales de contacto.
 
-## 🌐 Live Demo
+[Ver portfolio publicado](https://alvaro-sosa1432.vercel.app/)
 
-**[Visit My Portfolio](https://alvaro-sosa1432.vercel.app/)**
+El diseño que se describe abajo corresponde al código de este repositorio. La demo enlaza a la versión publicada en Vercel.
 
-## 👨‍💻 About Me
+## Sobre mí
 
-I'm a Junior Frontend Developer focused on building modern, responsive, and interactive web interfaces.
+Soy desarrollador frontend y disfruto crear interfaces responsivas y funcionales. Uso mis proyectos personales para poner en práctica lo que aprendo y busco mi primera oportunidad como **Frontend Trainee o Junior** para aportar y seguir aprendiendo junto a un equipo.
 
-I enjoy working with React, Next.js, TypeScript, JavaScript, and Tailwind CSS.
+## Diseño y secciones
 
-I'm interested in freelance opportunities involving website improvements, responsive layouts, and frontend development.
+- **Hero** con saludo animado, la ilustración del portfolio y accesos a Proyectos y al CV.
+- **Sobre mí** con una presentación breve, etiquetas de tecnologías y enlaces de contacto.
+- **Proyectos** con capturas reales, descripciones breves, etiquetas y enlaces a cada demo y repositorio.
+- **Diseño responsive** con fondo oscuro, acentos violetas y tipografías Bitcount Grid Double y Poppins. Las tarjetas se apilan en móvil y se distribuyen en columnas cuando hay espacio.
+- **Animaciones e interacciones** en el saludo, el borde de la ilustración, el fondo y las tarjetas de proyectos.
 
-## 🛠️ Tech Stack
+## Tecnologías del portfolio
 
-- **Framework:** Next.js
-- **UI Library:** React
-- **Language:** TypeScript
-- **Styling:** Tailwind CSS
-- **Animations:** Motion
-- **Icons:** Lucide React, React Icons, Tabler Icons
-- **Version Control:** Git & GitHub
+- **Aplicación** · Next.js 16, React 19 y TypeScript.
+- **Estilos y tipografías** · Tailwind CSS 4 y `next/font`.
+- **Animación e iconos** · Motion, Lucide React y React Icons.
 
-## ✨ Features
+## Proyectos
 
-- Personal introduction and technical skills section
-- Project showcase with links to live applications
-- Animated navigation between page sections
-- Interactive UI elements and visual effects
-- Links to GitHub and LinkedIn
-- Email contact link
-- Downloadable CV
+| Proyecto | Descripción | Enlaces |
+| --- | --- | --- |
+| Rick and Morty App | Explorador de personajes con búsqueda por nombre y fichas individuales, basado en la Rick and Morty API. | [Demo](https://rick-and-morty-app-two-tau.vercel.app/) · [Código](https://github.com/alvaro-sosa1432/rick-and-morty-app) |
+| My E-commerce | Tienda con catálogo y fichas de producto obtenidos de la Fake Store API. | [Demo](https://my-eccormmerce.vercel.app/) · [Código](https://github.com/alvaro-sosa1432/my-eccormmerce) |
 
-## 📂 Featured Projects
+## Ejecutar en local
 
-### Rick and Morty App
-
-A React application built using the Rick and Morty API.
-
-**[Live Demo](https://rick-and-morty-app-two-tau.vercel.app/)**
-
-### My E-commerce
-
-An e-commerce frontend developed using the Fake Store API.
-
-**[Live Demo](https://my-eccormmerce.vercel.app/)**
-
-## 🚀 Getting Started
-
-Clone the repository:
+Necesitás Node.js y pnpm. Next.js requiere Node.js 20.9 o superior.
 
 ```bash
 git clone https://github.com/alvaro-sosa1432/portfolio.git
 cd portfolio
+pnpm install
+pnpm dev
 ```
 
-Install dependencies:
+Abrí [localhost:3000](http://localhost:3000/) en tu navegador.
 
-```bash
-npm install
-```
+## Contacto
 
-Run the development server:
-
-```bash
-npm run dev
-```
-
-Open `http://localhost:3000` in your browser.
-
-## 🤝 Freelance Services
-
-I'm available for small frontend projects such as:
-
-- HTML and CSS fixes
-- Responsive website improvements
-- Landing pages
-- React components
-- UI bug fixes and visual improvements
-
-## 📬 Contact
-
-- **Portfolio:** https://alvaro-sosa1432.vercel.app/
-- **GitHub:** https://github.com/alvaro-sosa1432
-- **LinkedIn:** https://www.linkedin.com/in/alvaro-sosa1432/
-
----
-
-Built with Next.js, React, TypeScript, and Tailwind CSS.
+[Correo](mailto:alvarososafrancisco1432@gmail.com) · [GitHub](https://github.com/alvaro-sosa1432) · [LinkedIn](https://www.linkedin.com/in/alvaro-sosa1432/) · [CV](public/AlvaroSosa-CV%28ES%29.pdf)
