@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { ExternalLink, Github } from "lucide-react";
-import type { IProjectData } from "../Projects";
+import type { ProjectData } from "../Projects";
 
 const actionClasses =
   "inline-flex min-h-12 items-center justify-center gap-2 rounded-xl px-3 py-2 text-center text-sm font-medium transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-400";
@@ -13,17 +13,23 @@ export const ProjectComponent = ({
   demoUrl,
   codeUrl,
   technologies,
-}: IProjectData) => {
+}: ProjectData) => {
   return (
     <article className="group flex min-w-0 flex-col rounded-3xl border border-purple-500/25 bg-white/[0.04] transition-colors hover:border-purple-400/60 focus-within:border-purple-400/60 motion-safe:transition-[border-color,transform] motion-safe:hover:-translate-y-1">
-      <div className="relative aspect-video overflow-hidden rounded-t-[inherit] border-b border-purple-500/20 bg-zinc-900">
-        <Image
-          src={image}
-          alt={imageAlt}
-          fill
-          sizes="(min-width: 1152px) 516px, (min-width: 1024px) calc((100vw - 120px) / 2), (min-width: 768px) calc((100vw - 84px) / 2), (min-width: 640px) calc(100vw - 64px), calc(100vw - 40px)"
-          className="object-cover object-top motion-safe:transition-transform motion-safe:duration-300 motion-safe:group-hover:scale-[1.025]"
-        />
+      <div className="relative grid aspect-video place-items-center overflow-hidden rounded-t-[inherit] border-b border-purple-500/20 bg-zinc-900">
+        {image !== undefined ? (
+          <Image
+            src={image}
+            alt={imageAlt}
+            fill
+            sizes="(min-width: 1152px) 336px, (min-width: 1024px) calc((100vw - 144px) / 3), (min-width: 768px) calc((100vw - 84px) / 2), (min-width: 640px) calc(100vw - 64px), calc(100vw - 40px)"
+            className="object-cover object-top motion-safe:transition-transform motion-safe:duration-300 motion-safe:group-hover:scale-[1.025]"
+          />
+        ) : (
+          <span className="px-4 text-center font-[family-name:var(--font-poppins)] text-sm text-zinc-400">
+            Captura no disponible
+          </span>
+        )}
       </div>
 
       <div className="flex flex-1 flex-col p-4 sm:p-6">
