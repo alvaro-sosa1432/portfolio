@@ -30,6 +30,7 @@ Soy desarrollador frontend y disfruto crear interfaces responsivas y funcionales
 | --- | --- | --- |
 | Rick and Morty App | Explorador de personajes con búsqueda por nombre y fichas individuales, basado en la Rick and Morty API. | [Demo](https://rick-and-morty-app-two-tau.vercel.app/) · [Código](https://github.com/alvaro-sosa1432/rick-and-morty-app) |
 | My E-commerce | Tienda con catálogo y fichas de producto obtenidos de la Fake Store API. | [Demo](https://my-eccormmerce.vercel.app/) · [Código](https://github.com/alvaro-sosa1432/my-eccormmerce) |
+| ToDo App con Supabase | Gestión de tareas con autenticación, rutas protegidas y operaciones CRUD. Usa React, JavaScript, Tailwind CSS y Vite, con Supabase para guardar las tareas de cada usuario. | [Demo](https://todo-app-supabase-three.vercel.app/) · [Código](https://github.com/alvaro-sosa1432/todo-app-supabase) |
 
 ## Ejecutar en local
 
