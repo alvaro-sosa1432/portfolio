@@ -35,8 +35,8 @@ const projects: ProjectData[] = [
       "Tienda con catálogo y fichas de producto de la Fake Store API.",
     image: "/my-eccommerce.png",
     imageAlt: "Página de inicio de la tienda con su catálogo de productos",
-    demoUrl: "https://my-eccormmerce.vercel.app/",
-    codeUrl: "https://github.com/alvaro-sosa1432/my-eccormmerce",
+    demoUrl: "https://eccomerce-my-eco.vercel.app/",
+    codeUrl: "https://github.com/alvaro-sosa1432/eccomerce-my-eco",
     technologies: [
       "React",
       "Vite",
